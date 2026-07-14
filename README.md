@@ -1,13 +1,9 @@
 # Welcome to RoomTopia!
 ---
-RoomTopia is a RecRoom server software made by recroom2016!
+RoomTopia is a fork of the open source project called OpenRec used to make OpenRec more user friendly and easier to use.
 
 ### Branches
- - Master / main
- - Nightly
-
-The master branch is the public branch where all the latest updates are published.
-The nightly branch is where all the experimental updates that are needed to be tested before release are.
+- Main Branch: This is the main branch where all the stable code is located.
 
 ---
 
