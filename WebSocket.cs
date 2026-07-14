@@ -29,11 +29,11 @@ namespace ws
 			{
 				Console.WriteLine("WebSocket.cs called for.");
 				base.Send(Notification.ProcessRequest(e.Data));
-				bool flag = new WebClient().DownloadString("https://raw.githubusercontent.com/recroom2016/OpenRec/master/Update/banned.txt").Contains(File.ReadAllText("SaveData\\Profile\\userid.txt"));
+				bool flag = new WebClient().DownloadString("https://raw.githubusercontent.com/recroom2016/RoomTopia/master/Update/banned.txt").Contains(File.ReadAllText("SaveData\\Profile\\userid.txt"));
 				if (flag)
 				{
 					Console.ForegroundColor = ConsoleColor.Red;
-					Console.WriteLine("You are banned. Using this version of OpenRec will not work, please download OpenRec 0.4.2 or prior.");
+					Console.WriteLine("You are banned. Using this version of RoomTopia will not work, please download RoomTopia 0.4.2 or prior.");
 					Console.ForegroundColor = ConsoleColor.Green;
 					Program.bannedflag = true;
 				}

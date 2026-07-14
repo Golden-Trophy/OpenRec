@@ -218,10 +218,10 @@ namespace server
 							CachedPlayerID = ulong.Parse(text.Remove(0, 32));
 							CachedPlatformID = ulong.Parse(text.Remove(0, 22));
 							File.WriteAllText("SaveData\\Profile\\userid.txt", Convert.ToString(CachedPlayerID));
-							if (new WebClient().DownloadString("https://raw.githubusercontent.com/recroom2016/OpenRec/master/Update/banned.txt").Contains(File.ReadAllText("SaveData\\Profile\\userid.txt")))
+							if (new WebClient().DownloadString("https://raw.githubusercontent.com/recroom2016/RoomTopia/master/Update/banned.txt").Contains(File.ReadAllText("SaveData\\Profile\\userid.txt")))
 							{
 								Console.ForegroundColor = ConsoleColor.Red;
-								Console.WriteLine("You are banned. Using this version of OpenRec will not work, please download OpenRec 0.4.2 or prior.");
+								Console.WriteLine("You are banned. Using this version of RoomTopia will not work, please download RoomTopia 0.4.2 or prior.");
 								Console.ForegroundColor = ConsoleColor.Green;
 								start.Program.bannedflag = true;
 							}
@@ -391,10 +391,10 @@ namespace server
 							CachedPlayerID = ulong.Parse(text.Remove(0, 32));
 							CachedPlatformID = ulong.Parse(text.Remove(0, 22));
 							File.WriteAllText("SaveData\\Profile\\userid.txt", Convert.ToString(CachedPlayerID));
-							if (new WebClient().DownloadString("https://raw.githubusercontent.com/recroom2016/OpenRec/master/Update/banned.txt").Contains(File.ReadAllText("SaveData\\Profile\\userid.txt")))
+							if (new WebClient().DownloadString("https://raw.githubusercontent.com/recroom2016/RoomTopia/master/Update/banned.txt").Contains(File.ReadAllText("SaveData\\Profile\\userid.txt")))
 							{
 								Console.ForegroundColor = ConsoleColor.Red;
-								Console.WriteLine("You are banned. Using this version of OpenRec will not work, please download OpenRec 0.4.2 or prior.");
+								Console.WriteLine("You are banned. Using this version of RoomTopia will not work, please download RoomTopia 0.4.2 or prior.");
 								Console.ForegroundColor = ConsoleColor.Green;
 								start.Program.bannedflag = true;
 							}
@@ -637,10 +637,10 @@ namespace server
 						}
 						if (Url == "presence/v3/heartbeat")
 						{
-							if (new WebClient().DownloadString("https://raw.githubusercontent.com/recroom2016/OpenRec/master/Update/banned.txt").Contains(File.ReadAllText("SaveData\\Profile\\userid.txt")))
+							if (new WebClient().DownloadString("https://raw.githubusercontent.com/recroom2016/RoomTopia/master/Update/banned.txt").Contains(File.ReadAllText("SaveData\\Profile\\userid.txt")))
 							{
 								Console.ForegroundColor = ConsoleColor.Red;
-								Console.WriteLine("You are banned. Using this version of OpenRec will not work, please download OpenRec 0.4.2 or prior.");
+								Console.WriteLine("You are banned. Using this version of RoomTopia will not work, please download RoomTopia 0.4.2 or prior.");
 								Console.ForegroundColor = ConsoleColor.Green;
 								start.Program.bannedflag = true;
 								Late2018WebSock.instance.Broadcast(ws.Notification.Reponse.createBannedResponse());
@@ -649,11 +649,11 @@ namespace server
 						}
 						if (Url == "rooms/v1/featuredRoomGroup")
 						{
-							s = new WebClient().DownloadString("https://raw.githubusercontent.com/recroom2016/OpenRec/master/Update/dormslideshow.txt");
+							s = new WebClient().DownloadString("https://raw.githubusercontent.com/recroom2016/RoomTopia/master/Update/dormslideshow.txt");
 						}
 						if (Url.StartsWith("rooms/v1/hot"))
 						{
-							s = new WebClient().DownloadString("https://raw.githubusercontent.com/recroom2016/OpenRec/master/Update/hotrooms.txt");
+							s = new WebClient().DownloadString("https://raw.githubusercontent.com/recroom2016/RoomTopia/master/Update/hotrooms.txt");
 						}
 						if (Url.StartsWith("rooms/v2/instancedetails"))
 						{
@@ -674,7 +674,7 @@ namespace server
 						}
 						if (Url == "images/v1/slideshow")
 						{
-							s = new WebClient().DownloadString("https://raw.githubusercontent.com/recroom2016/OpenRec/master/Update/rcslideshow.txt");
+							s = new WebClient().DownloadString("https://raw.githubusercontent.com/recroom2016/RoomTopia/master/Update/rcslideshow.txt");
 						}
 						Console.WriteLine("API Response: " + s);
 						bytes = Encoding.UTF8.GetBytes(s);
@@ -708,7 +708,7 @@ namespace server
 		public static string VersionCheckResponse = "{\"ValidVersion\":true}";
 		public static string ModerationBlockDetails = "{\"ReportCategory\":0,\"Duration\":0,\"GameSessionId\":0,\"Message\":\"\"}";
 		public static string ImagesV2Named = "[{\"FriendlyImageName\":\"DormRoomBucket\",\"ImageName\":\"DormRoomBucket\",\"StartTime\":\"2021-12-27T21:27:38.1880175-08:00\",\"EndTime\":\"2025-12-27T21:27:38.1880399-08:00\"}";
-		public static string ChallengesV1GetCurrent = "{\"Success\":true,\"Message\":\"OpenRec\"}";
+		public static string ChallengesV1GetCurrent = "{\"Success\":true,\"Message\":\"RoomTopia\"}";
 		public static string ChecklistV1Current = "[{\"Order\":0,\"Objective\":3000,\"Count\":3,\"CreditAmount\":100},{\"Order\":1,\"Objective\":3001,\"Count\":3,\"CreditAmount\":100},{\"Order\":2,\"Objective\":3002,\"Count\":3,\"CreditAmount\":100}]";
 
 		public static string Banned = "{\"ReportCategory\":1,\"Duration\":10000000000000000,\"GameSessionId\":100,\"Message\":\"You have been banned. You are probably a little kid and are now whining at your VR headset. If you aren't a little kid, DM me to appeal.\"}";

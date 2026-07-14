@@ -4,14 +4,14 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
     <ApplicationIcon>icon2.ico</ApplicationIcon>
-    <AssemblyName>OpenRec</AssemblyName>
-    <RootNamespace>OpenRec</RootNamespace>
+    <AssemblyName>RoomTopia</AssemblyName>
+    <RootNamespace>RoomTopia</RootNamespace>
     <Authors>recroom2016</Authors>
     <PackageIcon>icon2.png</PackageIcon>
     <PackageIconUrl />
-    <RepositoryUrl>https://github.com/recroom2016/OpenRec</RepositoryUrl>
+    <RepositoryUrl>https://github.com/recroom2016/RoomTopia</RepositoryUrl>
     <PackageProjectUrl>https://discord.gg/daC8QUhnFP</PackageProjectUrl>
-    <Company>OpenRec</Company>
+    <Company>RoomTopia</Company>
     <Version>0.4.0</Version>
   </PropertyGroup>
 

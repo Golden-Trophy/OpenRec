@@ -1,6 +1,6 @@
-# Welcome to OpenRec!
+# Welcome to RoomTopia!
 ---
-OpenRec is a RecRoom server software made by recroom2016!
+RoomTopia is a RecRoom server software made by recroom2016!
 
 ### Branches
  - Master / main
