@@ -37,7 +37,7 @@ namespace start
                     Console.WriteLine("RoomTopia is server software that emulates the old servers of previous RecRoom versions.");
                     Console.WriteLine("To use RoomTopia, you'll need to have builds aswell!");
                     Console.WriteLine("To download builds, either go to the builds channel or use the links below: (these links are also available from the #builds channel)" + Environment.NewLine);
-                    Console.WriteLine(new WebClient().DownloadString("https://raw.githubusercontent.com/recroom2016/RoomTopia/master/Update/builds.txt"));
+                    Console.WriteLine(new WebClient().DownloadString("https://raw.githubusercontent.com/Golden-Trophy/RoomTopia/master/Update/builds.txt"));
                     Console.WriteLine("Download a build and press any key to continue:");
                     Console.ReadKey();
                     Console.Clear();
@@ -67,11 +67,11 @@ namespace start
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("RoomTopia - Open source Old RecRoom server software. (Version: " + appversion + ")");
             Console.WriteLine("Made and provided by RecRoom 2016.");
-            Console.WriteLine("Download source code here: https://github.com/recroom2016/RoomTopia");
+            Console.WriteLine("Download source code here: https://github.com/Golden-Trophy/RoomTopia");
             Console.WriteLine("Discord: https://discord.gg/daC8QUhnFP" + Environment.NewLine);
-            if (!(new WebClient().DownloadString("https://raw.githubusercontent.com/recroom2016/RoomTopia/master/Download/version.txt").Contains(appversion)))
+            if (!(new WebClient().DownloadString("https://raw.githubusercontent.com/Golden-Trophy/RoomTopia/master/Download/version.txt").Contains(appversion)))
             {
-                Console.WriteLine("This version of RoomTopia is outdated. We recommend you install the latest version, RoomTopia " + new WebClient().DownloadString("https://raw.githubusercontent.com/recroom2016/RoomTopia/master/Download/version.txt"));
+                Console.WriteLine("This version of RoomTopia is outdated. We recommend you install the latest version, RoomTopia " + new WebClient().DownloadString("https://raw.githubusercontent.com/Golden-Trophy/RoomTopia/master/Download/version.txt"));
             }
             
             Console.WriteLine("//Custom Room Downloader has been moved to the settings tab!" + Environment.NewLine);
@@ -81,7 +81,7 @@ namespace start
             {
                 Console.Title = "RoomTopia Changelog";
                 Console.Clear();
-                Console.WriteLine(new WebClient().DownloadString("https://raw.githubusercontent.com/recroom2016/RoomTopia/master/Download/changelog.txt"));
+                Console.WriteLine(new WebClient().DownloadString("https://raw.githubusercontent.com/Golden-Trophy/RoomTopia/master/Download/changelog.txt"));
                 Console.WriteLine("Press any key to continue:");
                 Console.ReadKey();
                 Console.Clear();
@@ -327,7 +327,7 @@ namespace start
                 Console.Title = "RoomTopia Build Downloads";
                 Console.Clear();
                 Console.WriteLine("To download builds, either go to the builds channel or use the links below: (these links are also available from the #builds channel)" + Environment.NewLine);
-                Console.WriteLine(new WebClient().DownloadString("https://raw.githubusercontent.com/recroom2016/RoomTopia/master/Update/builds.txt"));
+                Console.WriteLine(new WebClient().DownloadString("https://raw.githubusercontent.com/Golden-Trophy/RoomTopia/master/Update/builds.txt"));
                 Console.WriteLine("Download a build and press any key to continue:");
                 Console.ReadKey();
                 Console.Clear();

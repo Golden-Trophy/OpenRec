@@ -82,7 +82,7 @@ namespace api
 					},
 					new Activities.Charades.word
 					{
-						EN_US = "recroom2016",
+						EN_US = "Golden-Trophy",
 						Difficulty = 0
 					},
 					new Activities.Charades.word
